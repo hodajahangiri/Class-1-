@@ -12,19 +12,20 @@
 <body>
     <!-- Content goes here -->
      <!-- Header section -->
-    <header>
+    <header role="banner">
         <h1>Website Title</h1>
-        <nav>
+        <nav role="navigation" aria-label="Main navigation">
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="profile.html">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Main content -->
-    <main>
+    <main role="main">
+        <!-- Article Example -->
         <article>
             <h1>Main Title</h1>    <!-- Use only once per page -->
             <h2>Major Section</h2>
@@ -36,14 +37,13 @@
             <p>Regular paragraph text.</p>
             <p>Text with <strong>strong importance</strong> and <em>emphasis</em>.</p>
             <p>This is a <mark>highlighted</mark> text with a <small>side note</small>.</p>
-
+            <p>
+                <time datetime="2024-03-15">March 15, 2024</time>
+                by <span class="author">John Doe</span>
+            </p>
             <!-- Line Breaks and Horizontal Rules -->
             <p>Line 1<br>Line 2</p>
             <hr> <!-- Thematic break -->
-            <section id="heading_sec">
-                <h3>Section Heading</h3>
-                <p>Section content...</p>
-            </section>
         </article>
 
         <aside>
@@ -56,53 +56,56 @@
 
         <section>
             <!-- Unordered List -->
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2
-                <ul>
-                    <li>Nested item 1</li>
-                    <li>Nested item 2</li>
-                </ul>
-            </li>
-        </ul>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2
+                    <ul>
+                        <li>Nested item 1</li>
+                        <li>Nested item 2</li>
+                    </ul>
+                </li>
+            </ul>
 
             <!-- Ordered List -->
-        <ol>
-            <li>First step</li>
-            <li>Second step</li>
-            <li>Third step</li>
-        </ol>
-
+            <ol>
+                <li><a href="form.html">First step</a></li>
+                <li>Second step</li>
+                <li>Third step</li>
+            </ol>
             <!-- Description List -->
-        <dl>
-            <dt>HTML</dt>
-            <dd>HyperText Markup Language - the structure of web pages</dd>
-            <dt>CSS</dt>
-            <dd>Cascading Style Sheets - the styling of web pages</dd>
-        </dl>
-    </section>
-    <section>
-        <!-- External Links -->
-        <a href="https://example.com" target="_blank" rel="noopener noreferrer">
-            Visit Example.com
-        </a>
-        <!-- Internal Links -->
-        <a href="profile.html">About Me</a>
-        <a href="#heading_sec">Jump to Section</a>
-        <!-- Images -->
-        <img src="path/to/image.jpg" 
-            alt="Descriptive text for accessibility"
-            width="300" 
-            height="200">
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language - the structure of web pages</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets - the styling of web pages</dd>
+            </dl>
+        </section>
+        <section>
+            <!-- External Links -->
+            <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+                Visit Example.com
+            </a>
+            <!-- Internal Links -->
+            <a href="profile.html">About Me</a>
+            <a href="#heading_sec">Jump to Section</a>
+            <!-- Images -->
+            <img src="path/to/image.jpg" 
+                alt="Descriptive text for accessibility"
+                width="300" 
+                height="200">
 
-        <!-- Image with Caption -->
-        <figure>
-            <img src="mountain.jpg" alt="Mountain landscape">
-            <figcaption>Beautiful mountain vista at sunset</figcaption>
-        </figure>
-    </section>
+            <!-- Image with Caption -->
+            <figure>
+                <img src="mountain.jpg" alt="Mountain landscape">
+                <figcaption>Beautiful mountain vista at sunset</figcaption>
+            </figure>
 
-
+            <!-- Expandable Content -->
+                <details>
+                    <summary>Click to Learn More</summary>
+                    <p>Hidden content revealed when clicked.</p>
+                </details>
+        </section>
     </main>
 
     <!-- Footer section -->
