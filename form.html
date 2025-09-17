@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Information</title>
+</head>
+    <body>
+        <!-- Content goes here -->
+        <!-- Header section -->
+        <header role="banner">
+            <h1>Basic Information</h1>
+        </header>
+        <!-- Main content -->
+        <main role="main">
+            <article>
+                <form action="/submit" method="POST" novalidate>
+                <!-- Form content here -->
+                 <!-- Text Input -->
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" 
+                                id="username" 
+                                name="username" 
+                                required 
+                                minlength="3" 
+                                maxlength="20"
+                                pattern="[A-Za-z0-9_]+"
+                                aria-describedby="username-help">
+                        <small id="username-help">3-20 characters, letters, numbers, and underscore only</small>
+                    </div>
+                    <hr>
+                <!-- Email Input -->
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" 
+                                id="email" 
+                                name="email" 
+                                required
+                                autocomplete="email">
+                    </div>
+                    <hr>
+                <!-- Password Input -->
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" 
+                                id="password" 
+                                name="password" 
+                                required
+                                minlength="8"
+                                aria-describedby="password-help">
+                        <small id="password-help">Minimum 8 characters</small>
+                    </div>
+                    <hr>
+                    <!-- Number Input -->
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" 
+                            id="age" 
+                            name="age" 
+                            min="18" 
+                            max="120">
+                    </div>
+                    <hr>
+                    <!-- Date Input -->
+                    <div class="form-group">
+                        <label for="appointment">Appointment Date</label>
+                        <input type="date" 
+                            id="appointment" 
+                            name="appointment"
+                            min="2024-01-01">
+                    </div>
+                    <hr>
+                    <!-- Time Input -->
+                    <div class="form-group">
+                        <label for="meeting-time">Meeting Time</label>
+                        <input type="time" 
+                            id="meeting-time" 
+                            name="meeting-time">
+                    </div>
+                    <hr>
+                    <!-- Select Dropdown -->
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <select id="country" name="country" required>
+                            <option value="">Select a country</option>
+                            <optgroup label="North America">
+                                <option value="us">United States</option>
+                                <option value="ca">Canada</option>
+                                <option value="mx">Mexico</option>
+                            </optgroup>
+                            <optgroup label="Europe">
+                                <option value="uk">United Kingdom</option>
+                                <option value="fr">France</option>
+                                <option value="de">Germany</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <hr>
+                    <!-- Radio Buttons -->
+                    <fieldset>
+                        <legend>Subscription Type</legend>
+                        
+                        <div class="radio-group">
+                            <input type="radio" id="basic" name="subscription" value="basic">
+                            <label for="basic">Basic</label>
+                        </div>
+                        
+                        <div class="radio-group">
+                            <input type="radio" id="premium" name="subscription" value="premium">
+                            <label for="premium">Premium</label>
+                        </div>
+                    </fieldset>
+                    <hr>
+                    <!-- Checkboxes -->
+                    <fieldset>
+                        <legend>Interests</legend>
+                        
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="coding" name="interests" value="coding">
+                            <label for="coding">Coding</label>
+                        </div>
+                        
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="design" name="interests" value="design">
+                            <label for="design">Design</label>
+                        </div>
+                    </fieldset>
+                    <hr>
+                </form>
+            </article>
+        </main>
+    </body>
+</html>
