@@ -1,11 +1,114 @@
+<!-- index.html - Basic HTML5 template -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character encoding -->
     <meta charset="UTF-8">
+    <!-- Responsive viewport settings -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title -->
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello Class</h1>
+    <!-- Content goes here -->
+     <!-- Header section -->
+    <header>
+        <h1>Website Title</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <article>
+            <h1>Main Title</h1>    <!-- Use only once per page -->
+            <h2>Major Section</h2>
+            <h3>Subsection</h3>
+            <h4>Sub-subsection</h4>
+            <h5>Minor Section</h5>
+            <h6>Smallest Heading</h6>
+            <!-- Paragraphs and Text Formatting -->
+            <p>Regular paragraph text.</p>
+            <p>Text with <strong>strong importance</strong> and <em>emphasis</em>.</p>
+            <p>This is a <mark>highlighted</mark> text with a <small>side note</small>.</p>
+
+            <!-- Line Breaks and Horizontal Rules -->
+            <p>Line 1<br>Line 2</p>
+            <hr> <!-- Thematic break -->
+            <section id="heading_sec">
+                <h3>Section Heading</h3>
+                <p>Section content...</p>
+            </section>
+        </article>
+
+        <aside>
+            <h3>Related Content</h3>
+            <ul>
+                <li>Related link 1</li>
+                <li>Related link 2</li>
+            </ul>
+        </aside>
+
+        <section>
+            <!-- Unordered List -->
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2
+                <ul>
+                    <li>Nested item 1</li>
+                    <li>Nested item 2</li>
+                </ul>
+            </li>
+        </ul>
+
+            <!-- Ordered List -->
+        <ol>
+            <li>First step</li>
+            <li>Second step</li>
+            <li>Third step</li>
+        </ol>
+
+            <!-- Description List -->
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language - the structure of web pages</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets - the styling of web pages</dd>
+        </dl>
+    </section>
+    <section>
+        <!-- External Links -->
+        <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+            Visit Example.com
+        </a>
+        <!-- Internal Links -->
+        <a href="profile.html">About Me</a>
+        <a href="#heading_sec">Jump to Section</a>
+        <!-- Images -->
+        <img src="path/to/image.jpg" 
+            alt="Descriptive text for accessibility"
+            width="300" 
+            height="200">
+
+        <!-- Image with Caption -->
+        <figure>
+            <img src="mountain.jpg" alt="Mountain landscape">
+            <figcaption>Beautiful mountain vista at sunset</figcaption>
+        </figure>
+    </section>
+
+
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 Your Name</p>
+    </footer>
+    
 </body>
 </html>
